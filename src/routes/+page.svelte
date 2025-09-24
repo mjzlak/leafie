@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#5ca3ff; --beige:#fff2e0; --gray:#444444; }
+  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#5ca3ff; --beige:#1b1f3b; --gray:#444444; }
   *{ box-sizing:border-box } html,body{ margin:0; padding:0; color:var(--gray); background:var(--beige) }
   a{ color:inherit; text-decoration:none } button{ cursor:pointer }
   header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(130%) blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid #0001 }
@@ -83,7 +83,7 @@
       <div in:fly={{ y: 20, duration: 400 }}>
         <div class="hero-card">
           <h3>Qui est derrière Leafie ?</h3>
-          <p>Trois étudiants diplômés mais surtout passionnés par le développement web et l'accompagnement des projets digitaux de petites et moyennes entreprises. Nous tenons à coeur la réussite de chaque projet et l'accompagnement vers la transition numérique de nos clients.</p>
+          <p>Trois étudiants diplômés mais surtout passionnés par le développement web et l'accompagnement des projets digitaux de petites et moyennes entreprises.</p>
         </div>
       </div>
     </div>
