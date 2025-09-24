@@ -55,7 +55,7 @@
   <div class="container nav">
     <a class="brand" href="#" on:click|preventDefault={() => scrollToSelector('body')}>
       <div class="logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M19.5 3C12 5 5 11 5 17c0 2.761 2.239 5 5 5 6 0 12-7 14-14-4 1-7 1-9.5-5Z"/></svg>
+        <img src="/leafie.svg" alt="Leafie" style="width:18px;height:18px" />
       </div>
       <span>Leafie</span>
     </a>
