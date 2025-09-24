@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-vercel": "^5.10.2",
     "@sveltejs/kit": "^2.43.0",
     "svelte": "^5.0.0",
