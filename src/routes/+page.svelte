@@ -8,7 +8,7 @@
     { title: 'Maintenance', desc: "Sécurité, mises à jour, monitoring & amélioration continue.", icon: '🛠️' }
   ];
   const projects = [
-    { title: 'Site vitrine éco‑friendly', tag: 'Svelte • SEO • Perf', href: '#', img: '' },
+    { title: 'Site vitrine moderne', tag: 'Svelte • SEO • Perf', href: '#', img: '' },
     { title: 'Dashboard analytics', tag: 'SvelteKit • Charts', href: '#', img: '' },
     { title: 'E‑commerce headless', tag: 'Svelte • Headless CMS', href: '#', img: '' }
   ];
@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  :root{ --blue:#5ca3ff; --midnight:#1b1f3b; --leaf:#3bb273; --beige:#fff2e0; --gray:#444444; }
+  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#3bb273; --beige:#fff2e0; --gray:#444444; }
   *{ box-sizing:border-box } html,body{ margin:0; padding:0; color:var(--gray); background:var(--beige) }
   a{ color:inherit; text-decoration:none } button{ cursor:pointer }
   header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(130%) blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid #0001 }
@@ -72,9 +72,9 @@
   <section class="hero">
     <div class="container hero-grid">
       <div in:fade={{ duration: 350 }}>
-        <div class="eyebrow">Studio web • Svelte • Conseil</div>
+        <div class="eyebrow">Développement • Accompagnement • Conseil</div>
         <h1>Nous faisons grandir vos projets digitaux</h1>
-        <p class="lead">Développement web moderne, consulting technique et maintenance continue. Des expériences rapides, accessibles et pensées pour durer.</p>
+        <p class="lead">Développement web, consulting technique et maintenance continue. Des expériences rapides, accessibles et pensées pour durer.</p>
         <div class="actions">
           <a class="btn primary" href="#contact" on:click|preventDefault={() => scrollToSelector('#contact')}>Nous contacter</a>
           <a class="btn ghost" href="#realisations" on:click|preventDefault={() => scrollToSelector('#realisations')}>Voir nos réalisations</a>
@@ -83,7 +83,7 @@
       <div in:fly={{ y: 20, duration: 400 }}>
         <div class="hero-card">
           <h3>Pourquoi Leafie ?</h3>
-          <p>Performance, accessibilité, éco‑conception. Nous créons des interfaces qui allient modernité et sobriété numérique.</p>
+          <p>Performance, accessibilité. Nous créons des interfaces qui allient modernité et sobriété numérique pour vous accompagner au mieux.</p>
         </div>
       </div>
     </div>
