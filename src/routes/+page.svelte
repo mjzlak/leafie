@@ -170,7 +170,9 @@
 
 <footer>
   <div class="container foot">
-    <div class="brand"><div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.5 3C12 5 5 11 5 17c0 2.761 2.239 5 5 5 6 0 12-7 14-14-4 1-7 1-9.5-5Z"/></svg></div><span>Leafie</span></div>
+    <div class="brand"><div class="logo" aria-hidden="true">
+      <img src="/leafie.svg" alt="Leafie" style="width:32px;height:32px" />
+    </div><span>Leafie</span></div>
     <div class="small">© {new Date().getFullYear()} Leafie — Tous droits réservés • <a href="#">Mentions légales</a></div>
   </div>
 </footer>
