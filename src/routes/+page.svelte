@@ -9,8 +9,8 @@
   ];
   const projects = [
     { title: 'Site vitrine moderne', tag: 'Svelte • SEO • Perf', href: '#', img: '' },
-    { title: 'Dashboard analytics', tag: 'SvelteKit • Charts', href: '#', img: '' },
-    { title: 'E‑commerce headless', tag: 'Svelte • Headless CMS', href: '#', img: '' }
+    { title: 'Task manager', tag: 'Typescript • JS • MongoDB', href: '#', img: '' },
+    { title: 'Fridge manager', tag: 'Svelte • PocketBase', href: '#', img: '' }
   ];
   function scrollToSelector(sel) {
     const el = document.querySelector(sel);
@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#3bb273; --beige:#fff2e0; --gray:#444444; }
+  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#bedb97; --beige:#fff2e0; --gray:#444444; }
   *{ box-sizing:border-box } html,body{ margin:0; padding:0; color:var(--gray); background:var(--beige) }
   a{ color:inherit; text-decoration:none } button{ cursor:pointer }
   header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(130%) blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid #0001 }
@@ -63,7 +63,7 @@
       <a href="#services" on:click|preventDefault={() => scrollToSelector('#services')}>Services</a>
       <a href="#realisations" on:click|preventDefault={() => scrollToSelector('#realisations')}>Réalisations</a>
       <a href="#contact" on:click|preventDefault={() => scrollToSelector('#contact')}>Contact</a>
-      <button class="cta" on:click={() => scrollToSelector('#contact')}>Discutons</button>
+      <!--<button class="cta" on:click={() => scrollToSelector('#contact')}>Discutons</button>-->
     </nav>
   </div>
 </header>
@@ -83,7 +83,7 @@
       <div in:fly={{ y: 20, duration: 400 }}>
         <div class="hero-card">
           <h3>Pourquoi Leafie ?</h3>
-          <p>Performance, accessibilité. Nous créons des interfaces qui allient modernité et sobriété numérique pour vous accompagner au mieux.</p>
+          <p>Performance, accessibilité, rapidité. Nous créons des interfaces qui allient modernité et sobriété numérique pour vous accompagner au mieux.</p>
         </div>
       </div>
     </div>
