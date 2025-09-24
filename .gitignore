@@ -1,0 +1,22 @@
+# Node / builds
+node_modules/
+.svelte-kit/
+dist/
+build/
+.vercel/
+.netlify/
+test.svg
+
+# Environnements / secrets
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Logs / OS / IDE
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+.DS_Store
+.vscode/
+
