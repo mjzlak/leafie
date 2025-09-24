@@ -9,8 +9,8 @@
   ];
   const projects = [
     { title: 'Site vitrine moderne', tag: 'Svelte • SEO • Perf', href: '#', img: '' },
-    { title: 'Task manager', tag: 'Typescript • JS • MongoDB', href: '#', img: '' },
-    { title: 'Fridge manager', tag: 'Svelte • PocketBase', href: '#', img: '' }
+    { title: 'Task manager for work or personal use', tag: 'Typescript • JS • MongoDB', href: '#', img: '' },
+    { title: 'Pantry manager with a recipe recommendation', tag: 'Svelte • PocketBase', href: '#', img: '' }
   ];
   function scrollToSelector(sel) {
     const el = document.querySelector(sel);
@@ -19,7 +19,7 @@
 </script>
 
 <style>
-  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#bedb97; --beige:#fff2e0; --gray:#444444; }
+  :root{ --blue:#1b1f3b; --midnight:#1b1f3b; --leaf:#5ca3ff; --beige:#fff2e0; --gray:#444444; }
   *{ box-sizing:border-box } html,body{ margin:0; padding:0; color:var(--gray); background:var(--beige) }
   a{ color:inherit; text-decoration:none } button{ cursor:pointer }
   header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(130%) blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid #0001 }
@@ -63,7 +63,7 @@
       <a href="#services" on:click|preventDefault={() => scrollToSelector('#services')}>Services</a>
       <a href="#realisations" on:click|preventDefault={() => scrollToSelector('#realisations')}>Réalisations</a>
       <a href="#contact" on:click|preventDefault={() => scrollToSelector('#contact')}>Contact</a>
-      <!--<button class="cta" on:click={() => scrollToSelector('#contact')}>Discutons</button>-->
+      <!--<button class="menu" on:click={() => scrollToSelector('#contact')}>Discutons</button>-->
     </nav>
   </div>
 </header>
@@ -76,14 +76,14 @@
         <h1>Nous faisons grandir vos projets digitaux</h1>
         <p class="lead">Développement web, consulting technique et maintenance continue. Des expériences rapides, accessibles et pensées pour durer.</p>
         <div class="actions">
-          <a class="btn primary" href="#contact" on:click|preventDefault={() => scrollToSelector('#contact')}>Nous contacter</a>
-          <a class="btn ghost" href="#realisations" on:click|preventDefault={() => scrollToSelector('#realisations')}>Voir nos réalisations</a>
+          <a class="btn primary" href="#contact" on:click|preventDefault={() => scrollToSelector('#contact')}>Discutons</a>
+          <a class="btn ghost" href="#realisations" on:click|preventDefault={() => scrollToSelector('#realisations')}>Regardez nos réalisations</a>
         </div>
       </div>
       <div in:fly={{ y: 20, duration: 400 }}>
         <div class="hero-card">
-          <h3>Pourquoi Leafie ?</h3>
-          <p>Performance, accessibilité, rapidité. Nous créons des interfaces qui allient modernité et sobriété numérique pour vous accompagner au mieux.</p>
+          <h3>Qui est derrière Leafie ?</h3>
+          <p>Deux étudiants passionnés par le développement web et l'accompagnement des projets digitaux.</p>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
   <section id="services">
     <div class="container">
       <h2 class="section-title">Nos services</h2>
-      <p class="muted">Du prototype à la mise en production, nous vous accompagnons à chaque étape.</p>
+      <p class="muted">Du prototype à la mise en production, nous vous accompagnons à chaque étape. Performance, accessibilité, rapidité. Nous créons des interfaces qui allient modernité et sobriété numérique pour vous accompagner au mieux.</p>
       <div class="cards" style="margin-top:18px">
         {#each services as s, i}
           <article class="card" in:fly={{ y: 12, duration: 250, delay: 50 * i }}>
@@ -108,7 +108,7 @@
   <section id="realisations" style="background:#fff">
     <div class="container">
       <h2 class="section-title">Réalisations</h2>
-      <p class="muted">Un aperçu de nos travaux. (Remplacez par vos projets réels.)</p>
+      <p class="muted">Un aperçu de nos travaux.</p>
       <div class="portfolio" style="margin-top:18px">
         {#each projects as p, i}
           <a class="item" href={p.href} on:click|preventDefault in:fade={{ duration:250, delay:70*i }}>
@@ -136,8 +136,8 @@
         </ul>
       </div>
       <div in:fly={{ x: 16, duration: 350 }}>
-        <div class="hero-card"><h3>Stack</h3><p>SvelteKit, TypeScript, Tailwind (optionnel), CMS headless, CI/CD (Vercel/Netlify), tests.</p></div>
-        <div class="hero-card" style="margin-top:14px"><h3>Engagement</h3><p>Transparence, délais réalistes, accompagnement après mise en ligne.</p></div>
+        <div class="hero-card"><h3>Stack</h3><p>SvelteKit, TypeScript, JS, HTML/CSS, CI/CD (Vercel/Netlify), MongoDB.</p></div>
+        <div class="hero-card" style="margin-top:14px"><h3>Engagement</h3><p>Transparence, délais réalistes, accompagnement avant et après mise en ligne.</p></div>
       </div>
     </div>
   </section>
@@ -161,8 +161,8 @@
         {:else if form?.error}<p style="margin-top:12px;color:#b00020">❌ {form.error}</p>{/if}
       </div>
       <div>
-        <div class="hero-card"><h3>Contact direct</h3><p><strong>Email :</strong> contact@leafie.fr<br><strong>Commercial :</strong> hello@leafie.fr</p></div>
-        <div class="hero-card" style="margin-top:14px"><h3>Réseaux</h3><p>LinkedIn • GitHub • X (à compléter)</p></div>
+        <div class="hero-card"><h3>Contact spontané</h3><p><strong>Email :</strong> contact.leafie@gmail.fr<br><strong>Commercial :</strong> hello@leafie.fr</p></div>
+        <div class="hero-card" style="margin-top:14px"><h3>Réseaux</h3><p>LinkedIn • GitHub • X</p></div>
       </div>
     </div>
   </section>
