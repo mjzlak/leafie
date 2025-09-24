@@ -25,7 +25,7 @@
   header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(130%) blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid #0001 }
   .container{ max-width:1120px; margin:0 auto; padding:0 20px } .nav{ display:flex; align-items:center; justify-content:space-between; height:64px }
   .brand{ display:flex; align-items:center; gap:12px; font-weight:700; color:var(--midnight) }
-  .brand .logo{ width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,var(--blue),#78b3ff); display:grid; place-items:center }
+  .brand .logo{ width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,var(--blue),#5ca3ff); display:grid; place-items:center }
   .brand .logo svg{ width:18px; height:18px; fill:#fff } .menu{ display:flex; gap:20px; font-weight:600 }
   .cta{ padding:10px 16px; border-radius:12px; background:var(--blue); color:#fff; border:none; font-weight:700 }
   .hero{ position:relative; overflow:hidden; padding:88px 0 72px; background:radial-gradient(1200px 500px at 20% -10%,#fff,transparent 60%),linear-gradient(180deg,#fff 0%,#f9fbff 40%,var(--beige) 100%) }
@@ -83,7 +83,7 @@
       <div in:fly={{ y: 20, duration: 400 }}>
         <div class="hero-card">
           <h3>Qui est derrière Leafie ?</h3>
-          <p>Deux étudiants passionnés par le développement web et l'accompagnement des projets digitaux.</p>
+          <p>Trois étudiants diplômés mais surtout passionnés par le développement web et l'accompagnement des projets digitaux de petites et moyennes entreprises. Nous tenons à coeur la réussite de chaque projet et l'accompagnement vers la transition numérique de nos clients.</p>
         </div>
       </div>
     </div>
