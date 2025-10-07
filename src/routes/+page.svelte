@@ -161,8 +161,8 @@
         {:else if form?.error}<p style="margin-top:12px;color:#b00020">❌ {form.error}</p>{/if}
       </div>
       <div>
-        <div class="hero-card"><h3>Contact spontané</h3><p><strong>Email :</strong> contact.leafie@gmail.fr<br><strong>Commercial :</strong> hello@leafie.fr</p></div>
-        <div class="hero-card" style="margin-top:14px"><h3>Réseaux</h3><p>LinkedIn • GitHub • X</p></div>
+        <div class="hero-card"><h3>Contact spontané</h3><p><strong>Email :</strong> contact@leafie.fr<br></p></div>
+        <div class="hero-card" style="margin-top:14px"><h3>Réseaux</h3><p>LinkedIn • X</p></div>
       </div>
     </div>
   </section>
