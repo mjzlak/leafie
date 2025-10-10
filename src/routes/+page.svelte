@@ -151,6 +151,8 @@
           <style>
             .hp { position:absolute; left:-9999px; opacity:0; width:1px; height:1px; }
             .socials a { text-decoration: underline; text-underline-offset: 2px; }
+            .mailto { text-decoration: underline; text-underline-offset: 2px; }
+            .mailto:hover { opacity: .85; }
             .socials a:hover { opacity: .85; }
           </style>
           <input type="text" name="website" class="hp" autocomplete="off" tabindex="-1" aria-hidden="true">
@@ -163,7 +165,16 @@
         {:else if form?.error}<p style="margin-top:12px;color:#b00020">❌ {form.error}</p>{/if}
       </div>
       <div>
-        <div class="hero-card"><h3>Contact spontané</h3><p><strong>Email :</strong> contact@leafie.fr<br></p></div>
+        <div class="hero-card">
+          <h3>Contact spontané</h3>
+          <p><strong>Email :</strong>
+            <a
+              class="mailto"
+              href="mailto:contact@leafie.fr?subject=Contact%20depuis%20leafie.fr&body=Bonjour%20Leafie,%0A%0AJe%20vous%20contacte%20au%20sujet%20de..."
+            > contact@leafie.fr
+            </a>
+          </p>
+        </div>
         <div class="hero-card" style="margin-top:14px">
           <h3>Réseaux</h3>
           <p class="socials">
