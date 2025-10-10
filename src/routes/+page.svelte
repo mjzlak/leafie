@@ -150,6 +150,8 @@
         <form method="POST" use:enhance>
           <style>
             .hp { position:absolute; left:-9999px; opacity:0; width:1px; height:1px; }
+            .socials a { text-decoration: underline; text-underline-offset: 2px; }
+            .socials a:hover { opacity: .85; }
           </style>
           <input type="text" name="website" class="hp" autocomplete="off" tabindex="-1" aria-hidden="true">
           <div><label for="name">Votre nom</label><input id="name" name="name" placeholder="Prénom Nom" required></div>
@@ -162,7 +164,19 @@
       </div>
       <div>
         <div class="hero-card"><h3>Contact spontané</h3><p><strong>Email :</strong> contact@leafie.fr<br></p></div>
-        <div class="hero-card" style="margin-top:14px"><h3>Réseaux</h3><p>LinkedIn • X</p></div>
+        <div class="hero-card" style="margin-top:14px">
+          <h3>Réseaux</h3>
+          <p class="socials">
+            <a href="https://www.linkedin.com/company/leafie-entreprise/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Leafie sur LinkedIn" >LinkedIn</a> •
+            <a href="https://x.com/leafiecm"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Leafie sur X (Twitter)">X</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
